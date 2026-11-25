@@ -5,6 +5,8 @@
 
 {% do c1.set_user(values.consts.run_as_user, values.consts.run_as_group) %}
 
+{% do c1.set_grace_period(values.mariadb.stop_grace_period) %}
+
 {% set perms_config = {"uid": values.consts.run_as_user, "gid": values.consts.run_as_group, "mode": "check"} %}
 
 {% do c1.add_storage("/var/lib/mysql", values.storage.data) %}
