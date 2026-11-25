@@ -29,5 +29,5 @@ sources:
 - https://hub.docker.com/_/mariadb
 title: Mariadb
 train: community
-version: 1.1.26
+version: 1.1.27
 risks: []
