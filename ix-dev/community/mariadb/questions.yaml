@@ -71,6 +71,14 @@ questions:
           schema:
             type: boolean
             default: true
+        - variable: stop_grace_period
+          label: Stop Grace Period
+          description: The time in seconds given to MariaDB to shut down cleanly before it is killed.
+          schema:
+            type: int
+            min: 1
+            default: 10
+            required: true
         - variable: additional_envs
           label: Additional Environment Variables
           schema:
